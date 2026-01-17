@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # ==========================================
 # 1. SETUP & DATA EXTRACTION
 # ==========================================
-TICKER = 'TSLA'
+TICKER = 'BTC-USD' # ChANged from 'TSLA' to 'BTC-USD'
 YEARS_TO_PREDICT = 1
 TRADING_DAYS = 252
 SIMULATIONS = 100
