@@ -39,15 +39,15 @@ def analyze_stock(ticker, start, end):
 
 data, vol = analyze_stock(TICKER, START_DATE, END_DATE)
 
-# # Plotting the Closing Price
-# plt.figure(figsize=(10, 6))
-# plt.plot(data['Close'], label=f'{TICKER} Price')
-# plt.title(f'{TICKER} Price History (Vol: {vol*100:.2f}%)')
-# plt.xlabel('Date')
-# plt.ylabel('Price ($)')
-# plt.legend()
-# plt.grid(True)
-# plt.show()
+# Plotting the Closing Price
+plt.figure(figsize=(10, 6))
+plt.plot(data['Close'], label=f'{TICKER} Price')
+plt.title(f'{TICKER} Price History (Vol: {vol*100:.2f}%)')
+plt.xlabel('Date')
+plt.ylabel('Price ($)')
+plt.legend()
+plt.grid(True)
+plt.show()
 
 # Plotting the Daily Returns (The "Noise")
 plt.figure(figsize=(10, 4))
