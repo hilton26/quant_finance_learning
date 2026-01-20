@@ -37,3 +37,30 @@ The script (`monte_carlo.py`) performs two main tasks:
 
 ---
 *Created as part of my journey into Quantitative Finance.*
+
+
+# 📈 Action Trading Bot (Aggressive Strategy)
+
+This project is a Python-based algorithmic trading bot designed for **aggressive trend following**. Unlike standard conservative bots, this script prioritizes speed and entry volume over safety.
+
+## ⚡ Strategy Logic
+This bot uses a "Scalper" mentality:
+* **Fast Reaction:** Uses a **10-day** Moving Average (vs. the standard 50) to catch trends immediately.
+* **High Risk Tolerance:** Buys even when the asset is "Overbought" (RSI up to **80**), assuming strong momentum will continue.
+* **Momentum Confirmation:** Uses MACD to confirm the trend direction.
+
+## 🛠 Dependencies
+* `yfinance` (Data feed)
+* `pandas` & `numpy` (Calculation engine)
+* `matplotlib` (Visualization dashboard)
+
+## 🚀 How to Run
+1.  Ensure you have the libraries installed:
+    ```bash
+    pip install yfinance pandas numpy matplotlib
+    ```
+2.  Run the script:
+    ```bash
+    python action_bot.py
+    ```
+3.  The dashboard will pop up showing **Price**, **MACD**, and **RSI**.
