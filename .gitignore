@@ -6,8 +6,8 @@ __pycache__/
 .DS_Store
 
 # Virtual Environments (where libraries live - we don't upload these)
-venv/
-env/
+.venv/
+.env/
 
 # IDE settings (VS Code, PyCharm settings)
 .vscode/
